@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title:" />
+        <EditText
+            android:id="@+id/task_title_et"
+            android:hint="Task title"
+            android:padding="5sp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image URL:" />
+        <EditText
+            android:id="@+id/task_image_url_et"
+            android:hint="Task image URL"
+            android:padding="5sp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deadline:" />
+        <EditText
+            android:id="@+id/task_deadline_et"
+            android:hint="Deadline: dd/MM/YYYY hh:mm:ss"
+            android:padding="5sp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:inputType="datetime"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description:" />
+        <EditText
+            android:id="@+id/task_description_et"
+            android:hint="Task description"
+            android:padding="5sp"
+            android:backgroundTint="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:inputType="text|textMultiLine" />
+        <Button
+            android:id="@+id/cancel_edit_btn"
+            android:layout_width="match_parent"
+            android:text="Cancel"
+            android:backgroundTint="@android:color/darker_gray"
+            android:layout_height="60sp"/>
+        <Button
+            android:id="@+id/update_btn"
+            android:layout_width="match_parent"
+            android:text="Update"
+            android:backgroundTint="@color/btn_primary_blue"
+            android:layout_height="60sp"/>
+        <Button
+            android:id="@+id/delete_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:backgroundTint="@color/btn_danger_red"
+            android:text="Delete" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
