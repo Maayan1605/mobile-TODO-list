@@ -46,7 +46,7 @@ public class CreateTaskActivity extends AppCompatActivity implements View.OnClic
         createBtn.setOnClickListener(this);
     }
 
-
+    // on click function for buttons
     @Override
     public void onClick(View v) {
         try {
